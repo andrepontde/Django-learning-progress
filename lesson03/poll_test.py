@@ -46,3 +46,11 @@ current_year = timezone.now().year
 
 q = Question.objects.get(pk=1)
 print(q.was_published_recently())
+
+q.choice_set.all()
+
+# q.choice_set.create(choice_text='Not much', votes=0)
+# q.choice_set.create(choice_text='Just hacking again', votes=0)
+# q.choice_set.create(choice_text='The sky', votes=0)
+
+# print(q.choice_set.all())
